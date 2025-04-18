@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>main</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <h1>Done!!</h1>
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto bg-slate-200 py-6">
+        <header>
+            <nav class="flex justify-around items-center">
+                <img class="w-16" src="assets/Group.png" alt="">
+                <div>
+                    <h1 class="text-3xl font-bold "> $ 4500</h1>
+                    <p class="border rounded p-1">Available balance</p>
+                </div>
+                <button class="btn">Log out</button>
+            </nav>
+            <section class="mt-10">
+                <h1 class="text-2xl font-bold mb-2">Welcome to Payooo!</h1>
+                <p>Enjoy the easy & convenient financial service with us.</p>
+                <div class="cards grid grid-cols-3 mt-14 gap-2 p-2">
+                    <div class="box cursor-pointer border rounded-sm p-3 text-center">
+                        <img class="w-8 mx-auto" src="assets/wallet1.png" alt="">
+                        <h3>Add Money</h3>
+                    </div>
+                    <div class="box cursor-pointer border rounded-sm p-3 text-center">
+                        <img class="w-8 mx-auto" src="assets/send1.png" alt="">
+                        <h3>Cash Out</h3>
+                    </div>
+                    <div class="box cursor-pointer border rounded-sm p-3 text-center">
+                        <img class="w-8 mx-auto" src="assets/purse1.png" alt="">
+                        <h3>Pay Bill</h3>
+                    </div>
+                    <div class="box cursor-pointer border rounded-sm p-3 text-center">
+                        <img class="w-8 mx-auto" src="assets/money1.png" alt="">
+                        <h3>Transfer Money</h3>
+                    </div>
+                    <div class="box cursor-pointer border rounded-sm p-3 text-center">
+                        <img class="w-8 mx-auto" src="assets/bonus1.png" alt="">
+                        <h3>Get Bonus</h3>
+                    </div>
+                    <div class="box cursor-pointer border rounded-sm p-3 text-center">
+                        <img class="w-8 mx-auto" src="assets/transaction1.png" alt="">
+                        <h3>Transaction History</h3>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+    </section>
 </body>
 </html>
