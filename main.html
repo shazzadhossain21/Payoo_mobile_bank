@@ -13,7 +13,7 @@
             <nav class="flex justify-around items-center">
                 <img class="w-16" src="assets/Group.png" alt="">
                 <div>
-                    <h1 class="text-3xl font-bold "> $ 4500</h1>
+                    <h1 class="text-3xl font-bold "> $ <span id="main-balance">4500</span></h1>
                     <p class="border rounded p-1">Available balance</p>
                 </div>
                 <button class="btn">Log out</button>
@@ -47,9 +47,42 @@
                         <h3>Transaction History</h3>
                     </div>
                 </div>
+            <section>
+                <h2>Add Money</h2>
+                <div>
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                     
+                      <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                            <legend>Select a Bank</Select></legend>
+                            <select class="select">
+                                <option disabled selected>Select bank</option>
+                                <option value="Bkash">Bkash</option>
+                                <option value="Nagad">Nagad</option>
+                                <option value="Rocket">Rocket</option>
+                                <option value="U Pay">U Pay</option>
+                                <option value="DBBL">DBBL</option>
+
+                              </select>
+                              <fieldset class="fieldset">
+                                <label class="fieldset-label">Account Number</label>
+                                <input value="01313176712" id="account-num" type="number" class="input" placeholder="Type your Account number" required />
+                                <label class="fieldset-label">Amount</label>
+                                <input id="amount" type="number" class="input" placeholder="Type your Amount" required />
+                                <label class="fieldset-label">PIN</label>
+                                <input value="1234" id="pin-num" type="text" class="input" placeholder="Type your PIN" required />
+                                <div><a class="link link-hover">Forgot PIN?</a></div>
+                                <button id="add-money" type="submit"      id="login-btn" class="btn btn-neutral border-none bg-blue-700 mt-4">Add Money</button>
+                              </fieldset>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
             </section>
         </header>
 
     </section>
+    <script src="script/addMoney.js"></script>
 </body>
 </html>
