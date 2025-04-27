@@ -1,5 +1,7 @@
 document.getElementById('cashout-btn').addEventListener('click', function(event){
     event.preventDefault();
+
+    const accountNum = document.getElementById("account-num").value;
     const pin = document.getElementById('cashout-pin').value;
     const convertedPin = parseInt(pin);
     const amount = document.getElementById('cashout-amount').value;
@@ -10,7 +12,12 @@ document.getElementById('cashout-btn').addEventListener('click', function(event)
       const sub = convertedMainBalance  - convertedAmount ;
       document.getElementById('main-balance').innerText = sub;
      
-      
+      const transactionContainer = document.getElementById('transaction-container');
+      const p = document.createElement('p');
+      p.innerText = `
+      Cashout ${convertedAmount} from ${accountNum} Account
+      `
+     transactionContainer.appendChild(p);
         
         
     }

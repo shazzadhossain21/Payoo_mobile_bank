@@ -42,7 +42,7 @@
                         <img class="w-8 mx-auto" src="assets/bonus1.png" alt="">
                         <h3>Get Bonus</h3>
                     </div>
-                    <div class="box cursor-pointer border rounded-sm p-3 text-center hover:bg-blue-300">
+                    <div id="transaction-box" class="box cursor-pointer border rounded-sm p-3 text-center hover:bg-blue-300">
                         <img class="w-8 mx-auto" src="assets/transaction1.png" alt="">
                         <h3>Transaction History</h3>
                     </div>
@@ -89,7 +89,10 @@
 
         <section id="cashOut">
             <h2>Cash Out</h2>
-            <fieldset class="fieldset">
+          <div>
+            <div class="hero-content flex-col lg:flex-row-reverse"> 
+              <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+                <fieldset class="fieldset">
                 <label class="fieldset-label">Account Number</label>
                 <input value="01313176712" id="account-num" type="number" class="input" placeholder="Type your Account number" required />
                 <label class="fieldset-label">Amount</label>
@@ -98,7 +101,20 @@
                 <input value="1234" id="cashout-pin" type="text" class="input" placeholder="Type your PIN" required />
                 <div><a class="link link-hover">Forgot PIN?</a></div>
                 <button id="cashout-btn" type="submit"      id="login-btn" class="btn btn-neutral border-none bg-blue-700 mt-4">Cash Out</button>
-              </fieldset>
+                </fieldset>
+             </div> 
+            </div>
+          </div>   
+        </section>
+        
+        <!-- Transaction History-->
+
+        <section id="transaction-history">
+            <h1 class="text-3xl font-bold text-red-500 text-center p-3">Transaction History</h1>
+        <div id="transaction-container">
+
+        </div>
+
         </section>
         </header>
 
@@ -106,5 +122,6 @@
     <script src="script/addMoney.js"></script>
     <script src="script/toggle.js"></script>
     <script src="script/cashOut.js"></script>
+    <script src="script/transaction-history.js"></script>
 </body>
 </html>
